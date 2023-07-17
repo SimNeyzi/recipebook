@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Recipe book",
+  "version": "1.0",
+  "description": "Add recipes to your personal collection",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "64": "images/icon-64.png"
+  }
+}
